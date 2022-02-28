@@ -8,5 +8,5 @@
 
 ## Nvim install
 Once all before steps, inside nvim do:  
-:source %
+:source %  
 :PluginInstall
