@@ -7,6 +7,6 @@
 - Execute ./dotfiles_setup.sh
 
 ## Nvim install
-Once all before steps, inside nvim do:
-  :source %
-  :PluginInstall
+Once all before steps, inside nvim do:  
+:source %
+:PluginInstall
