@@ -10,3 +10,7 @@
 Once all before steps, inside nvim do:  
 :source %  
 :PluginInstall
+
+## TMux install
+To install plugins, inside TMux do:
+Ctrl + B; I
