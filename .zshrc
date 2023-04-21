@@ -6,14 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-# Oh My Zsh installation path
-export ZSH="$HOME/.oh-my-zsh"
-
-export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/opt/go/bin/:/opt/kerbrute/:/opt/ghidra/:/opt/nvim/bin:$PATH
-
-# Zsh theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
-
 # Plugins
 plugins=(
 	git
@@ -22,6 +14,13 @@ plugins=(
     sudo
 )
 
+# Oh My Zsh installation path
+export ZSH="$HOME/.oh-my-zsh"
+
+export PATH=~/.local/bin:/snap/bin:/usr/sandbox/:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/games:/usr/local/sbin:/usr/sbin:/sbin:/opt/go/bin/:/opt/kerbrute/:/opt/ghidra/:/opt/nvim/bin:$PATH
+
+# Zsh theme
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Save type histort for completion and easier life
 HISTFILE=~/.zsh_history
