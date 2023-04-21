@@ -22,9 +22,13 @@ tput civis
 
 # Zsh
 sudo apt-get install zsh
-rm -rf $HOME/{.zshrc,.p10k.zsh,.oh-my-zsh}
-cp -r {.zshrc,.p10k.zsh} $HOME
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm -rf $HOME/.zshrc
+rm -rf $HOME/.p10k.zsh
+rm -rf $HOME/.oh-my-zsh*
+
+cp -r .zshrc $HOME
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --keep-zshrc --unattended
 
 # Kitty
 rm -rf $HOME/.conig/kitty
