@@ -25,6 +25,7 @@ cp -r {.zshrc,.p10k.zsh,.oh-my-zsh} $HOME
 cp -r .config/{nvim,nvim} $HOME/.config
 
 # Install terminal stuff
+git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
 sudo apt-get -y install fzf bat lsd
 
 tput cnorm
