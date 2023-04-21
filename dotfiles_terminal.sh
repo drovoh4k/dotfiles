@@ -20,12 +20,18 @@ trap ctrl_c INT
 
 tput civis
 
-# Copy files and folders
-cp -r {.zshrc,.p10k.zsh,.oh-my-zsh} $HOME
+# Zsh
+sudo apt-get install zsh
+cp -r {.zshrc,.p10k.zsh} $HOME
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+# Kitty
 cp -r .config/kitty $HOME/.config
 
-# Install terminal stuff
+# Nvim
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-sudo apt-get -y install zsh fzf bat lsd
+
+# Others
+sudo apt-get install fzf bat lsd -y
 
 tput cnorm
