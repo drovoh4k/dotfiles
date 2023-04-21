@@ -22,7 +22,7 @@ tput civis
 
 # Copy files and folders
 cp -r {.zshrc,.p10k.zsh,.oh-my-zsh} $HOME
-cp -r .config/{nvim,kitty} $HOME/.config
+cp -r .config/kitty $HOME/.config
 
 # Install terminal stuff
 git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1 && nvim
