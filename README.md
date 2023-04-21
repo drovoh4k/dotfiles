@@ -1,11 +1,15 @@
 # My dotfiles
 
-## First step
-- Install [Kitty](https://github.com/kovidgoyal/kitty)
-- Install [Nvim](https://github.com/neovim/neovim)
-- Execute ./dotfiles_setup.sh
+# Terminal
+- Install on /opt [Kitty](https://github.com/kovidgoyal/kitty)
+- Install on /opt [Nvim](https://github.com/neovim/neovim)
+- Execute ./dotfiles_terminal.sh
+- Execute ./hacknerdfonts.sh
 
-## Nvim install
-Once all before steps, inside nvim do:  
-:source %  
-:PluginInstall
+# Windows Manager
+- Install [bspwm](https://github.com/baskerville/bspwm)
+- Install [sxhkd](https://github.com/baskerville/sxhkd)
+- Install [polybar](https://github.com/polybar/polybar)
+- Install [picom](https://github.com/yshui/picom)
+- Install [rofi](https://github.com/davatorium/rofi)
+- Execute ./dotfiles_wm.sh
