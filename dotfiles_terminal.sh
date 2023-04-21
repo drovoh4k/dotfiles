@@ -22,14 +22,17 @@ tput civis
 
 # Zsh
 sudo apt-get install zsh
+rm -rf $HOME/.zshrc
 cp -r {.zshrc,.p10k.zsh} $HOME
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Kitty
+rm -rf $HOME/.conig/kitty
 cp -r .config/kitty $HOME/.config
 
 # Nvim
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
+rm -rf $HOME/.config/nvim
+git clone https://github.com/NvChad/NvChad $HOME/.config/nvim --depth 1
 
 # Others
 sudo apt-get install fzf bat lsd -y
