@@ -22,7 +22,7 @@ tput civis
 
 # Zsh
 sudo apt-get install zsh
-rm -rf $HOME/.zshrc
+rm -rf $HOME/{.zshrc,.p10k.zsh,.oh-my-zsh}
 cp -r {.zshrc,.p10k.zsh} $HOME
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
