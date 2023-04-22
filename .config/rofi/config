@@ -1,1 +1,1 @@
-rofi.theme: /home/littlerobot54/.config/rofi/themes/nord.rasi
+rofi.theme: $HOME/.config/rofi/themes/nord.rasi

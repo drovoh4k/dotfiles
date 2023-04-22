@@ -118,4 +118,4 @@ super + ctrl + shift + space
 
 # move a floating window
 super + {Left,Down,Up,Right}
-	/home/littlerobot54/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
+	$HOME/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
