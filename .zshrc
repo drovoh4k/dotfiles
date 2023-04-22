@@ -11,7 +11,7 @@ plugins=(
 	git
 	zsh-autosuggestions
 	zsh-syntax-highlighting
-    sudo
+  sudo
 )
 
 # Oh My Zsh installation path
@@ -28,6 +28,17 @@ HISTSIZE=10000
 SAVEHIST=10000
 setopt histignorealldups sharehistory
 
+# Loads oh-my-zsh
+source $ZSH/oh-my-zsh.sh
+
+# Loads p10k
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Loads fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+
 # Functions
 function settarget() {
 		ip_address=$1
@@ -42,22 +53,12 @@ function cleartarget() {
 
 
 # Custom alias
-alias vi="/opt/nvim/bin/nvim"
-alias cat="bat"
-alias catn="/bin/cat"
-alias ls="lsd"
-alias l="lsd -l"
-alias la="lsd -a"
-alias lla="lsd -la"
-alias lt="lsd --tree"
-alias icat="kitty +kitten icat"
-
-
-# Loads oh-my-zsh
-source $ZSH/oh-my-zsh.sh
-
-# Loads p10k
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Loads fzf
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+alias vi='/opt/nvim/bin/nvim'
+alias cat='bat'
+alias catn='/bin/cat'
+alias ls='lsd'
+alias l='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
+alias lt='lsd --tree'
+alias icat='kitty +kitten icat'
