@@ -100,8 +100,6 @@ sudo make install
 sudo apt-get install bspwm -y
 ```
 
-> **OJO**: Al copiar los archivos de configuración, dentro de la carpeta scripts, dar permisos de ejecuión al fichero "bspwm_resize"
-
 Clonamos el repositiorio git de **sxhkd** y hacemos un make:
 ```bash
 git clone https://github.com/baskerville/sxhkd.git
@@ -126,8 +124,6 @@ cmake ..
 make -j$(nproc)
 sudo make install
 ```
-
-> **OJO**: Al copiar los archivos de configuración, copiar el contenido de la carpeta `fonts` en: `/usr/local/share/fonts`
 
 # 6. Picom & Feh
 Primero instalamos las dependencias:
