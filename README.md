@@ -151,3 +151,9 @@ Para instalar rofi simplemente hacemos:
 ```bash
 sudo apt install rofi -y
 ```
+
+# 8. Ranger
+Para instalar ranger simplemente hacemos:
+```bash
+sudo apt install ranger
+```
