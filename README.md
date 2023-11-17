@@ -64,13 +64,7 @@ sudo apt install npm -y
 npm install tree-sitter-cli@0.18.3
 ```
 
-Despues descargamos la ultima versión  **SOPORTADA por NvChad** del [repositorio de github](https://github.com/neovim/neovim/releases/tag/stable). Y copiamos el contenido en el directorio /opt.
-
-A continuación eliminamos la configuración actual y descargamos la configuración de [NvChad](https://nvchad.com).
-```bash
-rm -rf ~/.config/nvim
-git clone https://github.com/NvChad/NvChad ~/.config/nvim --depth 1
-```
+Despues descargamos la ultima versión  **SOPORTADA por [NvChad](https://nvchad.com)** del [repositorio de github](https://github.com/neovim/neovim/releases/tag/stable). Y copiamos el contenido en el directorio /opt.
 
 Y para tener la misma config en el usurario root:
 ```bash
