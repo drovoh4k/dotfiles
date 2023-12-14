@@ -8,7 +8,7 @@
 dir="$HOME/.config/bspwm/rices/hacking/scripts/rofi"
 uptime=$(uptime -p | sed -e 's/up //g')
 
-rofi_command="rofi -no-config -theme $dir/powermenu.rasi"
+rofi_command="rofi -no-config -theme $dir/powermenu.rasi -dpi 150"
 
 # Options
 shutdown=" Shutdown"
@@ -24,12 +24,13 @@ confirm_exit() {
 		-i\
 		-no-fixed-num-lines\
 		-p "Are You Sure? : "\
-		-theme $dir/confirm.rasi
+		-theme $dir/confirm.rasi\
+    -dpi 150
 }
 
 # Message
 msg() {
-	rofi -no-config -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
+	rofi -no-config -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n" -dpi 150
 }
 
 # Variable passed to rofi
