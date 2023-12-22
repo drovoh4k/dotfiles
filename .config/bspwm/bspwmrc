@@ -82,9 +82,9 @@ pgrep -x sxhkd > /dev/null || { sxhkd -c "$HOME"/.config/bspwm/sxhkdrc & }
 vmware-user-suid-wrapper &
 
 # Fix cursor
-# xsetroot -cursor_name left_ptr
-mate-appearance-properties &
-sleep 1
-kill %
-dconf write /org/mate/desktop/peripherals/mouse/cursor-theme "'hacking'"
-dconf write /org/mate/desktop/interface/gtk-theme "'hacking'"
+xsetroot -cursor_name left_ptr
+# mate-appearance-properties &
+# sleep 1
+# kill %
+# dconf write /org/mate/desktop/peripherals/mouse/cursor-theme "'hacking'"
+# dconf write /org/mate/desktop/interface/gtk-theme "'hacking'"

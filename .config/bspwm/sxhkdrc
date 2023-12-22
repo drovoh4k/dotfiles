@@ -16,7 +16,7 @@ super + Return
 	/opt/kitty/bin/kitty
 
 # program launcher
-super + d
+super + space
 	$HOME/.config/bspwm/rices/hacking/scripts/launcher.sh
 
 # make sxhkd reload its configuration files:
@@ -128,3 +128,9 @@ super + ctrl + shift + space
 # move a floating window
 super + {Left,Down,Up,Right}
 	$HOME/.config/bspwm/scripts/bspwm_resize {west,south,north,east}
+
+# Minimize window
+super + d
+	bspc node $1 --flag sticky=on; bspc node $1 --flag hidden=on
+super + shift + d
+	$HOME/.config/bspwm/scripts/show_hidden
