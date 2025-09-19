@@ -81,7 +81,7 @@ function cleanDocker () {
 
 # Custom alias
 alias vi='/opt/nvim/bin/nvim'
-alias cat='bat'
+alias cat='batcat'
 alias catn='/bin/cat'
 alias ls='lsd'
 alias l='lsd -l'
