@@ -66,6 +66,9 @@ sudo apt install fzf -y
 # Install Zsh
 sudo apt install zsh -y
 
+# Set as default
+sudo chsh -s /usr/bin/zsh $USER
+
 # Install OhMyZsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 
